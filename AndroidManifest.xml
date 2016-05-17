@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.kiryaziev.PowerPlantInfo"
+    android:versionCode="126"
+    android:versionName="1.2.6" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/main_icon"
+        android:label="Power Plant Info"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".F_Splashscr"
+            android:label="ТЭП ТЭС" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".F_Main"
+            android:label="Активная мощность по блокам" android:icon="@drawable/power_lightning_icon">
+        </activity>
+        <activity
+            android:name=".F_Details"
+            android:label="Показатели по блоку" android:icon="@drawable/chart_search_icon">
+        </activity>
+        <activity
+            android:name=".F_Settings"
+            android:label="Настройки" android:icon="@drawable/settings_icon">
+        </activity>
+        <activity
+            android:name=".F_About"
+            android:label="О программе" android:icon="@drawable/information_icon">
+        </activity>
+    </application>
+
+</manifest>
